@@ -22,7 +22,7 @@ const int N = 2e5 + 4, mod = 1e9 + 7;
 
 ll n, d, k, m;
 
-
+//dsadadadadadadasdsad
 int main() {
     NEMOX
 #ifndef ONLINE_JUDGE
