@@ -20,8 +20,14 @@ body{
    margin-left: 37%;
 
 }
-.container .form .form-content .signup-form{
+.container .form .form-content .signup-form {
     border: none;
+    margin-top: 10px;
+    /*display: flex;*/
+    /*flex-wrap: wrap;*/
+
+}
+.container .form .form-content .signup-form input{
     margin-top: 10px;
     /*display: flex;*/
     /*flex-wrap: wrap;*/
