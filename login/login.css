@@ -1,5 +1,5 @@
-body{
-    min-height:  100px;
+body {
+    min-height: 100px;
     align-items: center;
     justify-content: center;
     background-color: #777;
@@ -11,43 +11,50 @@ body{
 }
 
 /* start nav bar */
-*{
+* {
     margin: 0%;
     padding: 0%;
     font-family: Arial, Helvetica, sans-serif;
 }
-.nav{
+
+.nav {
     background-color: black;
     height: 80px;
     position: sticky;
     top: 0px;
     z-index: 1;
 }
-.bar{
+
+.bar {
     margin-right: 10%;
 }
-.nav .logo{
+
+.nav .logo {
     float: left;
     width: 60%;
 }
-.nav .logo h2{
+
+.nav .logo h2 {
     float: left;
     padding-left: 3%;
     margin-top: 20px;
     font-style: italic;
     font-size: 35px;
 }
-.nav .logo img{
+
+.nav .logo img {
     width: 80px;
     margin-left: 30%;
     float: left;
 
 }
-.nav ul{
+
+.nav ul {
     display: inline-block;
     list-style-type: none;
 }
-.nav ul li{
+
+.nav ul li {
     margin-right: 30px;
     margin-top: 25px;
     padding-right: 10px;
@@ -56,29 +63,35 @@ body{
     font-size: large;
     font-weight: bold;
 }
-.nav ul li a{
+
+.nav ul li a {
     text-decoration: none;
     color: white;
     padding: 7px 10px 7px 10px;
 
 }
-.nav ul li a:hover{
-    background-color:#45757e;
+
+.nav ul li a:hover {
+    background-color: #2682FF;
     border-radius: 20px;
 }
-.nav ul li a.active{
-    background-color: #45757e;
-    border: 1px solid transparent #45757e;
+
+.nav ul li a.active {
+    background-color: #2682FF;
+    border: 1px solid transparent #2682FF;
     border-radius: 20px
 }
+
 /* end nav bar */
 
 .container{
-    width: 30%;
+    width: 20%;
     background-color: rgb(255, 255, 255);
     padding: 40px 30px;
-    box-shadow: 0 5px 10px rgba(0, 0, 0,0.2);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.4);
     margin:100px auto;
+    border-radius: 20px;
+
 
 }
 .container .form {
@@ -122,6 +135,13 @@ body{
     width: 100px ;
     height: 100px;
 }
+
+.text a{
+    text-decoration: none;
+    /*color: #2682FF;*/
+    font-weight: bold;
+}
+
 
 
 /* start footer */
