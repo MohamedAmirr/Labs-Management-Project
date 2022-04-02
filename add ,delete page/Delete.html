@@ -11,23 +11,23 @@
 <body>
 <!-- start of the navigation -->
 <div class="nav">
-    <!--        deh 34an tnadi 7agat el css    -->
-    <div class="logo">
-        <a href="..\homepage\homepage.html"><img src="logo.png" alt="logo"></a>
-        <a href="..\homepage\homepage.html"><h2 style="color: #9ff1ff;">Tech<span style="color: white;">Steck</span></h2></a>
+    <a href=..\homepage\homepage.html class="logoo"><img src="logo.png"></a>
+    <a href=..\homepage\homepage.html class="logo">TechSteck</a>
+    <div class="bar">
+        <ul>
+            <li><a href="..\homepage\homepage.html" >Home</a></li>
+            <li><a href="..\forum\forum.html"> Forum</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="..\login\login.html">Join</a></li>
+        </ul>
     </div>
-    <ul>
-        <li><a href="..\homepage\homepage.html">Home</a></li>
-        <li><a href="..\forum\forum.html" class="active"> Forum</a></li>
-        <li><a href="about.html">About Us</a></li>
-        <li><a href="..\login\login.html" >Join</a></li>
-    </ul>
 </div>
 <!-- end of the navigation -->
 
 <!-- start of the animation -->
 <div class="slider"></div>
 <!-- end of animation -->
+
 
 
 
@@ -58,7 +58,7 @@
             </div>
 
             <div class="button">
-                <input type="submit" value="Delete">
+                <input type="submit"  value="Delete" onclick="alert('are you sure to delete this lab ?')">
             </div>
 
         </form>

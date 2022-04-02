@@ -14,80 +14,69 @@ body
 *{
     margin: 0%;
     padding: 0%;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'poppins', sans-serif;
 }
 
-.nav
-{
-    background-color: black;
+/* nav */
+.bar{
+    text-align: center;
+    justify-content: center;
+    justify-items: center;
+    margin-left: 55%;
+
+}
+.nav{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    /* display: flex; */
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.6s;
+    padding: 40 100px;
+    background-color: rgb(0, 0, 0);
     height: 80px;
     position: sticky;
     top: 0px;
+    opacity: 0.9;
     z-index: 1;
 }
-
-.bar
-{
-    margin-right: 10%;
-}
-
-.nav .logo
-{  
-    float: left;
-    width: 60%;
-}
-
-.nav .logo h2
-{
-    float: left;
-    padding-left: 3%;
-    margin-top: 20px;
-    font-style: italic;
-    font-size: 35px;
-}
-.nav .logo img{
-    width: 80px;
-    margin-left: 30%;
-    float: left;
-
-}
-
-.nav ul
-{
-    display: inline-block;
-    list-style-type: none;
-}
-
-.nav ul li
-{
-    margin-right: 30px;
-    margin-top: 25px;
-    padding-right: 10px;
-    float: left;
-    color: white;
-    font-size: large;
-    font-weight: bold;
-}
-
-.nav ul li a
-{
+.nav .logo{
+    font-weight: 700;
+    color: #fff;
     text-decoration: none;
-    color: white;
-    padding: 7px 10px 7px 10px;
-
+    font-size: 2em;
+    letter-spacing: 2px;
+    float: left;
+    padding-left: 2%;
+    margin-top: 25px;
+}
+.nav ul{
+    text-align: center;
 }
 
-.nav ul li a:hover
-{
-    background-color:#2682FF;
-    border-radius: 20px;
-}
+.nav ul li{
+    list-style: none;
+    display: inline-block;
+    margin-top: 30px;
 
-.nav ul li a.active
-{
-    background-color: #2682FF;
-    border: 1px solid transparent #2682FF;
-    border-radius: 20px
+}
+.nav ul li a{
+    margin: 0 15px;
+    text-decoration: none;
+    color: #fff;
+    letter-spacing: 2px;
+    font-weight: 500px;
+}
+.nav ul li a:hover{
+    color: rgb(131, 176, 255);
+}
+.nav .logoo img{
+    width: 80px;
+    display: flex;
+    margin-left: 5%;
+    float: left;
 }
 
 input[type="radio"] 
@@ -174,3 +163,4 @@ input
     cursor: pointer;
     font-weight: bold;
 }
+
