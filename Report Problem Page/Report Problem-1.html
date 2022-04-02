@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="Report Style-2.css"> 
+        <link rel="shortcut icon" href="logo.png">
+        <title>Report a Problem</title>
+    </head>
+
+<body>
+
+        <div class="nav">
+            <div class="bar">
+              <div class="logo">
+                <a href="homepage.html"><img src="logo.png" alt="logo"></a>
+                <a href="homepage.html"><h2 style="color: #6cbb45;">Tech<span style="color: white;">Steck</span></h2></a>
+              </div>
+            <ul>
+                <li><a href="homepage.html" class="active">Home</a></li>
+                <li><a href="forum.html"> Forum</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="signuppage.html">Join</a></li>
+            </ul>
+            </div>
+          </div>
+
+        <div class = "box"> 
+            <form>
+                <h1> What's happening? </h1> <br/>
+                <label class="labid">Laboratory ID </label>
+                <input class="id" type = "text" placeholder = ""><br/>
+                <label class ="pc"> Number of PC </label>
+                <input class ="num3" type = "text" placeholder = ""><br/>
+                <label class = "setdate">Date of Occurrence</label> 
+                <input class = "date" type = "date" placeholder=""><br/>
+                <label class="type">Choose Problem Type</label>
+                <input class="checkbox1" type="radio" name="creditCheck" id="c01" value="Yes" checked/>Software
+                <input class="checkbox2" type="radio" name="creditCheck" id="c02" value="No" />Hardware
+                <br/>
+                <textarea class ="mess" id="message" rows="3" required>Description of problem...</textarea>
+                <br>
+                <input class = "button1" type = "button" value = "Save Changes">
+                <input class = "button2" type="button" value="Cancel">
+            </form>
+    </body>
+</html>
