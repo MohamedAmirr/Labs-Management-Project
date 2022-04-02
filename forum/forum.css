@@ -3,9 +3,10 @@ body {
     align-items: center;
     justify-content: center;
     background-size: cover;
-    background-position: center;
     font-family: Arial;
-    background-color: #999999;
+    background-image: url('bckgrnd.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 /* start nav bar */
@@ -123,14 +124,12 @@ img{
     padding: 5px 4px;
     font-size: 20px;
     text-decoration: none;
-    margin-top: 35px;
+    margin-top: 3px;
 
  }
-hr{}
-
-
-
-
+hr{
+    margin-top: 35px;
+}
 
 
 
@@ -205,7 +204,7 @@ form:hover .fa{
     color: rgb(255, 255, 255);
     padding: 30px;
     text-align: center;
-    margin-top: 0px;
+    margin-top: 100px;
 }
 
 .footer ul {
