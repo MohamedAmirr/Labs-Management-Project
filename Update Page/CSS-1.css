@@ -135,7 +135,8 @@ input
 
 .button1
 {
-    background-color: rgba(23, 189, 37, 0.63);
+    background-color: #2682FF;
+    color: white;
     height: 40px;
     width: 120px;
     border-radius: 20px;
@@ -150,9 +151,23 @@ input
 
 .button2
 {
-    background-color: #bb1f1fad;
+    background-color: #4d535c;
+    color: white;
     height: 40px;
     width: 120px;
+    border-radius: 20px;
+    margin: 4px 2px;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.button3
+{
+    background-color: #c71111d8;
+    color: white;
+    height: 40px;
+    width: 140px;
     border-radius: 20px;
     margin: 4px 2px;
     border: none;
