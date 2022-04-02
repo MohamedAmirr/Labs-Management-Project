@@ -97,8 +97,6 @@ body {
     margin-right: 20px;
     border-radius: 20px;
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.4);
-
-
 }
 
 .card1:hover{
@@ -132,7 +130,11 @@ img{
 hr{
     margin-top: 35px;
 }
-
+.search_container{
+    display: flex;
+    justify-content: center;
+    margin-right: 50px;
+}
 
 
 
