@@ -1,3 +1,15 @@
+body {
+    /*display: flex;*/
+    height: 100vh;
+    justify-content: space-around;
+    align-items: center;
+    /*background: linear-gradient(135deg, #45757e, #45757e);*/
+    background-image: url('bck.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
 *{
     margin: 0%;
     padding: 0%;
@@ -68,13 +80,7 @@
 /* end of nav */
 
 
-body {
-    /*display: flex;*/
-    height: 100vh;
-    justify-content: space-around;
-    align-items: center;
-    background: linear-gradient(135deg, #45757e, #45757e);
-}
+
 
 .container {
     max-width: 700px;
@@ -170,3 +176,25 @@ form .button input:hover {
         width:5px;
     }
 }
+/* start footer */
+.footer{
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    padding: 30px;
+    text-align: center;
+    margin-top: 0px;
+}
+.footer ul{
+    list-style-type: none;
+}
+.footer  ul li{
+    display: inline-block;
+}
+.footer ul li a{
+    text-decoration: none
+}
+.footer ul li img{
+    width: 25px;
+    text-align: center;
+}
+/* end footer */
