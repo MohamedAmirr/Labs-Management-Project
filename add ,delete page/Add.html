@@ -5,88 +5,74 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="Add.css">
-    <link rel="shortcut icon" href="logo.png">
-    <title>Add Lab</title>
+    <link rel="shortcut icon" href="logoo.png"><title>I-Tech</title>
 </head>
 <body>
 <!-- start of the navigation -->
-<div class="nav">
-    <a href=..\homepage\homepage.html class="logoo"><img src="logo.png"></a>
-    <a href=..\homepage\homepage.html class="logo">TechSteck</a>
-    <div class="bar">
-        <ul>
-            <li><a href="..\homepage\homepage.html" >Home</a></li>
-            <li><a href="..\forum\forum.html"> Forum</a></li>
-            <li><a href="about.html">About Us</a></li>
-            <li><a href="..\login\login.html">Join</a></li>
-        </ul>
-    </div>
-</div>
+<header>
+    <a href="homepage.html"><img src="LogoMakr-6hmZdM.png" class="logo"></a>
+    <ul>
+        <li><a href="homepage.html" >Home</a></li>
+        <li><a href="#" class="active"> Forum</a></li>
+        <li><a href="index.html">projects</a></li>
+        <li><a href="#section3">About Us</a></li>
+        <li><a href="join.html">Join</a></li>
+    </ul>
+</header>
 <!-- end of the navigation -->
 
 <!-- start of the animation -->
-<div class="slider"></div>
-<!-- end of animation -->
+<div id='add-form' class='add-page'>
+    <div class ="form-box">
 
-
-<div class="body">
-    <div class="container">
-        <div class="title">Add Page</div>
-        <form action="#">
-            <div class="user-details">
-                <div class="input-box">
-                    <span class="details">Lab Name</span>
-                    <input type="text" placeholder="Lab Name" required>
-                </div>
-                <div class="input-box">
-                    <span class="details">Lab Id</span>
-                    <input type="text" placeholder="Lab ID" required>
-                    <!--            <input type="tex"-->
-                </div>
-                <div class="input-box">
-                    <span class="details">Building Number</span>
-                    <input type="text" placeholder="Building Number" required>
-                    <!--            <input type="tex"-->
-                </div>
-                <div class="input-box">
-                    <span class="details">Floor Number</span>
-                    <input type="text" placeholder="Floor Number" required>
-                    <!--            <input type="tex"-->
-                </div>
-                <div class="input-box">
-                    <span class="details">Number of PCs</span>
-                    <input type="text" placeholder="Number of PCs" required>
-                    <!--            <input type="tex"-->
-                </div>
-                <div class="input-box">
-                    <span class="details">Capacity</span>
-                    <input type="text" placeholder="Capacity" required>
-                    <!--            <input type="tex"-->
-                </div>
-                <div class="input-box">
-                    <span class="details">Number of chairs</span>
-                    <input type="text" placeholder="Number of chairs" required>
-                    <!--            <input type="tex"-->
-                </div>
-
-
-            </div>
-
-            <div class="button">
-                <!--                <form action="Dialogue box.html">-->
-                <input type="submit" value="Add"/>
-                <!--                </form>-->
-            </div>
-
+        <form id='add' class='input-group-add'>
+            <p>
+                Add Laboratory
+            </p>
+            <input type='text'class='input-field'placeholder='Lab Name' required >
+            <input type='text'class='input-field'placeholder='Lab ID' required>
+            <input type='text'class='input-field'placeholder='Building Number' required>
+            <input type='text'class='input-field'placeholder='Floor Number' required>
+            <input type='text'class='input-field'placeholder='Number of PCs' required>
+            <input type='text'class='input-field'placeholder='Capacity' required>
+            <input type='text'class='input-field'placeholder='Number of chairs' required>
+            <button type='submit'class='submit-btn'>Add</button>
         </form>
     </div>
 </div>
-<div class="footer">
-    <center><h4>Copyright &copy; All rights reserved, 2022 TechSteck</h4></center><br>
-    <ul>
-        <li><img src="facebook.png"> </li>
-        <li><img src="instagram.png"></li>
-        <li><img src="twitter.png"></li>
-    </ul>
+<!-- end of animation -->
+
+
+
+<div class="containerr" id="section3">
+    <div class="footer">
+        <div class="footer-heading footer1">
+            <h1>About us</h1>
+            <a href="#">Blog</a>
+            <a href="#">Demo</a>
+            <a href="#">Customers</a>
+            <a href="#">Investors</a>
+            <a href="#">Terms of Services</a>
+        </div>
+        <div class="footer-heading footer1">
+            <h1>Contact Us</h1>
+            <a href="#">Jobs</a>
+            <a href="#">Suppports</a>
+            <a href="#">Contact</a>
+            <a href="#">Sponsorships</a>
+        </div>
+        <div class="footer-heading footer1">
+            <h1>Social Media</h1>
+            <a href="#">Facebook</a>
+            <a href="#">Instagram</a>
+            <a href="#">twitter</a>
+            <a href="#">linkedin</a>
+        </div>
+    </div>
+    <div class="textt">
+        Copyright &copy; All rights reserved, 2022 I-Tech<br>
+    </div>
 </div>
+<script src="home-java.js"></script>
+
 </body>
