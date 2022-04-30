@@ -5,71 +5,77 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="delete page.css">
-    <link rel="shortcut icon" href="logo.png">
-    <title>Delete Lab</title>
+    <link rel="shortcut icon" href="logoo.png">
+    <title>Delete</title>
 </head>
 <body>
 <!-- start of the navigation -->
-<div class="nav">
-    <a href=..\homepage\homepage.html class="logoo"><img src="logo.png"></a>
-    <a href=..\homepage\homepage.html class="logo">TechSteck</a>
-    <div class="bar">
-        <ul>
-            <li><a href="..\homepage\homepage.html" >Home</a></li>
-            <li><a href="..\forum\forum.html"> Forum</a></li>
-            <li><a href="about.html">About Us</a></li>
-            <li><a href="..\login\login.html">Join</a></li>
-        </ul>
-    </div>
-</div>
+<header>
+    <a href="homepage.html"><img src="LogoMakr-6hmZdM.png" class="logo"></a>
+    <ul>
+        <li><a href="../homepage/homepage.html" >Home</a></li>
+        <li><a href="../forum/forum.html" class="active"> Forum</a></li>
+        <li><a href="../cover/index.html">projects</a></li>
+        <li><a href="#section3">About Us</a></li>
+        <li><a href="../join/join.html">Join</a></li>
+    </ul>
+</header>
 <!-- end of the navigation -->
 
 <!-- start of the animation -->
-<div class="slider"></div>
+<div class="transition">
+    <div id='add-form' class='add-page'>
+        <div class="form-box">
+
+            <form id='add' class='input-group-add'>
+                <p>
+                    Delete Laboratory
+                </p>
+                <input type='text' class='input-field' placeholder='Lab Name' disabled>
+                <input type='text' class='input-field' placeholder='Lab ID' disabled>
+                <input type='text' class='input-field' placeholder='Building Number' disabled>
+                <input type='text' class='input-field' placeholder='Floor Number' disabled>
+                <input type='text' class='input-field' placeholder='Number of PCs' disabled>
+                <input type='text' class='input-field' placeholder='Capacity' disabled>
+                <input type='text' class='input-field' placeholder='Number of chairs' disabled>
+                <button type='submit' class='submit-btn'>Delete</button>
+            </form>
+        </div>
+    </div>
+</div>
+
 <!-- end of animation -->
 
 
-
-
-    <div class="body">
-        <div class="container">
-        <div class="title">Delete page</div>
-        <form action="#">
-            <div class="user-details">
-            <div class="input-box">
-                <span class="details">Lab Name</span>
-                <input type="text"placeholder="Lab Name"disabled>
-            </div>
-            <div class="input-box">
-                <span class="details">Lab Id</span>
-                <input type="text"placeholder="Lab ID"disabled>
-                <!--            <input type="tex"-->
-            </div>
-            <div class="input-box">
-                <span class="details">Building Number</span>
-                <input type="text"placeholder="Building Number"disabled>
-                <!--            <input type="tex"-->
-            </div>
-            <div class="input-box">
-                <span class="details">Floor Number</span>
-                <input type="text"placeholder="Floor Number"disabled>
-                <!--            <input type="tex"-->
-            </div>
-            </div>
-
-            <div class="button">
-                <input type="submit"  value="Delete" onclick="alert('are you sure to delete this lab ?')">
-            </div>
-
-        </form>
+<div class="containerr" id="section3">
+    <div class="footer">
+        <div class="footer-heading footer1">
+            <h1>About us</h1>
+            <a href="#">Blog</a>
+            <a href="#">Demo</a>
+            <a href="#">Customers</a>
+            <a href="#">Investors</a>
+            <a href="#">Terms of Services</a>
+        </div>
+        <div class="footer-heading footer1">
+            <h1>Contact Us</h1>
+            <a href="#">Jobs</a>
+            <a href="#">Suppports</a>
+            <a href="#">Contact</a>
+            <a href="#">Sponsorships</a>
+        </div>
+        <div class="footer-heading footer1">
+            <h1>Social Media</h1>
+            <a href="#">Facebook</a>
+            <a href="#">Instagram</a>
+            <a href="#">twitter</a>
+            <a href="#">linkedin</a>
+        </div>
+    </div>
+    <div class="textt">
+        Copyright &copy; All rights reserved, 2022 I-Tech<br>
     </div>
 </div>
-<div class="footer">
-    <center><h4>Copyright &copy; All rights reserved, 2022 TechSteck</h4></center><br>
-    <ul>
-        <li><img src="facebook.png"> </li>
-        <li><img src="instagram.png"></li>
-        <li><img src="twitter.png"></li>
-    </ul>
-</div>
+<script defer src="Delete-java.js"></script>
+
 </body>
