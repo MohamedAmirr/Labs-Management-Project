@@ -21,10 +21,11 @@ header{
     margin: auto;
     top: 0;
     left: 0;
-    padding: 20px 110px;
+    padding: 20px 110px ;
     display: flex;
     align-items: center;
     justify-content: space-between;
+
 }
 .logo{
     position: relative;
@@ -47,6 +48,7 @@ header ul li{
     position: relative;
     transition: 0.5s;
 
+
 }
 header ul li a{
     position: relative;
@@ -55,6 +57,8 @@ header ul li a{
     text-transform: uppercase;
     margin: 0 15px;
     transition: 0.5s;
+
+
 }
 header ul li a::after{
     content: '';
