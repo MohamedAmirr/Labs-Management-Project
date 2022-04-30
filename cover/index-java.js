@@ -1,6 +1,3 @@
-let section = document.querySelector(".one");
-let divs = document.querySelectorAll(".transition div");
-
 function reveal(){
     var reveals=document.querySelectorAll(".transition");
     for (var i=0;i<reveals.length;i++){
