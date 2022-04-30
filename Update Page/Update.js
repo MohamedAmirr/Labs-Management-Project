@@ -46,7 +46,7 @@ function validateForm()
     }
     if(Laboratory_Name.value.trim()==='')
     {
-        setError(Laboratory_Name, "Laboratory Name can not be empty");      
+        setError(Laboratory_Name, "Laboratory Name can not be empty");
     }
     else if(Laboratory_Name.value.trim().length < 5 || Laboratory_Name.value.trim().length>15)
     {
@@ -56,32 +56,18 @@ function validateForm()
     {
         setSuccess(Laboratory_Name);
     }
-    if(Building_Number.value.trim()==='')
-    {
-        setError(Building_Number, "Building Number can not be empty");      
-    }
-    else if(Building_Number.value.trim().length < 1 || Building_Number.value.trim().length>5)
-    {
-        setError(Building_Number, "Id must be from 1 to 5");
-    }
-    else
-    {
-        setSuccess(Building_Number);
-    }
-
-
 }
 function setError (input, errorMessage)
 {
     let parent = input.parentElement;
-    let messageEle =parent.querySelector("p"); 
+    let messageEle =parent.querySelector("p");
     messageEle.style.visibility="visible";
     messageEle.innerText=errorMessage ;
 }
 function setSuccess(input)
 {
     let parent =  input.parentElement;
-    let messageEle =parent.querySelector("p"); 
+    let messageEle =parent.querySelector("p");
     messageEle.style.visibility="hidden";
     messageEle.innerText="";
 }
@@ -101,4 +87,3 @@ window.addEventListener("scroll",function(){
     var header = document.querySelector("header");
     header.classList.toggle("sticky",window.scrollY > 0)
 })
- 
