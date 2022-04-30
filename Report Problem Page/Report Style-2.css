@@ -200,9 +200,12 @@ textarea
 
 .button1:active {
     transform: scale(0.9);
+    transition: 0.5s;
+
 }
 .button2:active {
     transform: scale(0.9);
+    transition: 0.5s;
 }
 
 
