@@ -8,10 +8,11 @@ html{
     scroll-behavior: smooth;
 }
 body {
-  background-image:  linear-gradient(rgb(1, 9, 33),rgba(21, 4, 88, 0.1)),url('header.jpg');
+  background-image:  linear-gradient(rgb(1, 9, 33),rgba(21, 4, 88, 0.1)),url('heaader.jpg');
   background-position: center;
   background-size: cover;
-  /* width: 100%; */
+   width: 100%;
+    position: relative;
   background-repeat: no-repeat;
   justify-content: center;
   align-items: center;

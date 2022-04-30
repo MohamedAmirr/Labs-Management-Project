@@ -9,3 +9,7 @@ signUpButton.addEventListener('click', () => {
 signInButton.addEventListener('click', () => {
 	container.classList.remove("right-panel-active");
 });
+window.addEventListener("scroll",function(){
+	var header = document.querySelector("header");
+	header.classList.toggle("sticky",window.scrollY > 0)
+})
