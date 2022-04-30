@@ -175,6 +175,17 @@ input {
   outline: none;
 }
 
+.focus{
+    border: 1px solid #eee;
+    border-radius: 4px;
+    transition: 0.25s ease;
+}
+
+.focus:focus{
+    border-color: #cb8906;
+    color: #cb8906;
+}
+
 .container {
 	background-color: #fff;
 	border-radius: 10px;

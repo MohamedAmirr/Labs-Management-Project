@@ -140,10 +140,10 @@ header.sticky .logo {
     color: #cb8906;
 }
 
-.input-field2:focus{
-    border-color: #cb8906;
-    color: #cb8906;
-}
+/*.input-field2:focus{*/
+/*    border-color: #cb8906;*/
+/*    color: #cb8906;*/
+/*}*/
 
 button:active {
     transform: scale(0.9);
