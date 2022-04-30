@@ -4,63 +4,89 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="CSS-1.css">
-    <link rel="shortcut icon" href="logo.png">
+    <link rel="stylesheet" href="Update.css">
+    <link rel="shortcut icon" href="logoo.png">
     <title>Update Information</title>
 </head>
-
 <body>
 
-<div class="nav">
-    <a href=..\homepage\homepage.html class="logoo"><img src="logo.png"></a>
-    <a href=..\homepage\homepage.html class="logo">TechSteck</a>
-    <div class="bar">
-        <ul>
-            <li><a href="..\homepage\homepage.html" >Home</a></li>
-            <li><a href="..\forum\forum.html"> Forum</a></li>
-            <li><a href="about.html">About Us</a></li>
-            <li><a href="..\login\login.html">Join</a></li>
-        </ul>
+<header>
+    <a href="homepage.html"><img src="LogoMakr-6hmZdM.png" class="logo"></a>
+    <ul>
+        <li><a href="../homepage/homepage.html" >Home</a></li>
+        <li><a href="../forum/forum.html" class="active"> Forum</a></li>
+        <li><a href="../cover/index.html">projects</a></li>
+        <li><a href="#section3">About Us</a></li>
+        <li><a href="../join/join.html">Join</a></li>
+    </ul>
+</header>
+
+<div class="transition">
+    <div id='add-form' class='add-page'>
+        <div class="form-box">
+            <form id='add' class='input-group-add'>
+                <p>
+                    Update Laboratory <br> Information
+                </p>
+                <label class="lab">Laboratory ID </label>
+                <input type='text' class='input-field' placeholder='Enter Laboratory ID' required>
+                <label class="lab">Laboratory Name</label>
+                <input type='text' class='input-field' placeholder='Enter Laboratory Name' required>
+                <label class="lab">Building Number</label>
+                <input type='text' class='input-field' placeholder='Enter Building Number' required>
+                <label class="lab">Floor Number</label>
+                <input type='text' class='input-field' placeholder='Enter Floor Number' required>
+                <label class="lab"> Number of PCs </label>
+                <input type='number' class='input-field2' min="0" max="100" step="1" value="0" placeholder='Enter Number of PCs' required>
+                <label class="lab"> Capacity</label>
+                <input type='number' class='input-field2' min="0" max="100" step="1" value="0" placeholder='Enter Capacity' required>
+                <label class="lab"> Number of Chairs </label>
+                <input type='number' class='input-field2' min="0" max="100" step="1" value="0" placeholder='Enter Number of chairs' required>
+
+                <br><br>
+                <label class="status">Status</label>
+                <a><input class="checkbox" type="radio" name="creditCheck" id="c01" value="Yes" checked/>Active</a>
+                <a><input class="checkbox" type="radio" name="creditCheck" id="c02" value="No"/>Under maintenance</a>
+                <button type='submit' class='save'>Save Changes</button>
+                <button type='submit' class='cancel'>Cancel</button>
+                <a href="..\add ,delete page\Delete.html">
+                    <button type='submit' class='delete' action="..\add ,delete page\Delete.html">Delete Laboratory</button>
+                </a>
+            </form>
+        </div>
     </div>
 </div>
 
-<div class="box">
-    <form>
-        <h1> Update Laboratory Information </h1> <br/>
-        <label class="labid">Laboratory ID </label>
-        <input class="id" type="text" placeholder="Enter Laboratory ID"><br/>
-        <label class="labname">Laboratory Name</label>
-        <input class="name" type="text" placeholder="Enter Laboratory Name"><br/>
-        <label class="buildingnum">Building Number</label>
-        <input class="num1" type="text" placeholder="Enter Building Number"><br/>
-        <label class="floornum">Floor Number</label>
-        <input class="num2" type="number" placeholder="Enter Floor Number"><br/>
-        <label class="pc"> Number of PCs </label>
-        <input class="num3" type="number" placeholder="Enter Number of PCs"><br/>
-        <label class="cap"> Capacity</label>
-        <input class="num4" type="number" placeholder="Enter Capacity"><br/>
-        <label class="chairnum"> Number of Chairs </label>
-        <input class="num5" type="number" placeholder="Enter Number of Chairs"><br/>
-        <label class="status">Status</label>
-        <input class="checkbox1" type="radio" name="creditCheck" id="c01" value="Yes" checked/>Active
-        <input class="checkbox2" type="radio" name="creditCheck" id="c02" value="No"/>Under maintenance
-        <br/>
-        <input class="button1" type="button" value="Save Changes">
-        <input class="button2" type="button" value="Cancel"><br/>
-        <a href="..\add ,delete page\Delete.html">
-            <input class="button3" action="..\add ,delete page\Delete.html" type="button" value="Delete Laboratory">
-        </a>
-
-    </form>
 
 </div>
-<div class="footer">
-    <center><h4>Copyright &copy; All rights reserved, 2022 TechSteck</h4></center><br>
-    <ul>
-        <li><img src="facebook.png"> </li>
-        <li><img src="instagram.png"></li>
-        <li><img src="twitter.png"></li>
-    </ul>
+<div class="containerr" id="section3">
+    <div class="footer">
+        <div class="footer-heading footer1">
+            <h1>About us</h1>
+            <a href="#">Blog</a>
+            <a href="#">Demo</a>
+            <a href="#">Customers</a>
+            <a href="#">Investors</a>
+            <a href="#">Terms of Services</a>
+        </div>
+        <div class="footer-heading footer1">
+            <h1>Contact Us</h1>
+            <a href="#">Jobs</a>
+            <a href="#">Suppports</a>
+            <a href="#">Contact</a>
+            <a href="#">Sponsorships</a>
+        </div>
+        <div class="footer-heading footer1">
+            <h1>Social Media</h1>
+            <a href="#">Facebook</a>
+            <a href="#">Instagram</a>
+            <a href="#">twitter</a>
+            <a href="#">linkedin</a>
+        </div>
+    </div>
+    <div class="textt">
+        Copyright &copy; All rights reserved, 2022 I-Tech<br>
+    </div>
 </div>
 </body>
 </html>
