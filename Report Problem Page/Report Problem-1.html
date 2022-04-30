@@ -5,51 +5,69 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="Report Style-2.css">
-    <link rel="shortcut icon" href="logo.png">
-    <title>Report a Problem</title>
+    <link rel="shortcut icon" href="logoo.png"><title>I-Tech</title>
 </head>
-
 <body>
+<header>
+    <a href="homepage.html"><img src="LogoMakr-6hmZdM.png" class="logo"></a>
+    <ul>
+        <li><a href="homepage.html" class="active">Home</a></li>
+        <li><a href="#"> Forum</a></li>
+        <li><a href="index.html">projects</a></li>
+        <li><a href="#section3">About Us</a></li>
+        <li><a href="join.html">Join</a></li>
+    </ul>
+</header>
 
-<div class="nav">
-    <a href=..\homepage\homepage.html class="logoo"><img src="logo.png"></a>
-    <a href=..\homepage\homepage.html class="logo">TechSteck</a>
-    <div class="bar">
-        <ul>
-            <li><a href="..\homepage\homepage.html" >Home</a></li>
-            <li><a href="..\forum\forum.html"> Forum</a></li>
-            <li><a href="about.html">About Us</a></li>
-            <li><a href="..\login\login.html">Join</a></li>
-        </ul>
-    </div>
-</div>
-
-<div class="box">
+<div class="box" id="Box" >
     <form>
         <h1> What's happening? </h1> <br/>
         <label class="labid">Laboratory ID </label>
-        <input class="id" type="text" placeholder="Enter Laboratory ID"><br/>
+        <input id="ID" class="id" type="text" placeholder="Enter Laboratory ID" required> <br/>
         <label class="pc"> Number of PC </label>
-        <input class="num3" type="text" placeholder="Enter Number of PC"><br/>
+        <input id="num_pc" class="num3" type="text" placeholder="Enter Number of PC" required><br/>
         <label class="setdate">Date of Occurrence</label>
-        <input class="date" type="date" placeholder=""><br/>
+        <input id="Date" class="date" type="date" placeholder=""><br/>
         <label class="type">Choose Problem Type</label>
         <input class="checkbox1" type="radio" name="creditCheck" id="c01" value="Yes" checked/>Software
         <input class="checkbox2" type="radio" name="creditCheck" id="c02" value="No"/>Hardware
         <br/>
-        <textarea class="mess" id="message" placeholder="Description of problem..." rows="3" required></textarea>
+        <textarea id = "description" class="mess" id="message" placeholder="Description of problem..." rows="3" required></textarea>
         <br>
-        <input class="button1" type="button" value="Save Changes">
-        <input class="button2" type="button" value="Cancel">
+        <input id = "save" class="button1" type="button" value="Save Changes">
+        <input id = "cancel" class="button2" type="button" value="Cancel">
     </form>
 </div>
+<div class="containerr" id="section3">
     <div class="footer">
-        <center><h4>Copyright &copy; All rights reserved, 2022 TechSteck</h4></center><br>
-        <ul>
-            <li><img src="facebook.png"> </li>
-            <li><img src="instagram.png"></li>
-            <li><img src="twitter.png"></li>
-        </ul>
+        <div class="footer-heading footer1">
+            <h1>About us</h1>
+            <a href="#">Blog</a>
+            <a href="#">Demo</a>
+            <a href="#">Customers</a>
+            <a href="#">Investors</a>
+            <a href="#">Terms of Services</a>
+        </div>
+        <div class="footer-heading footer1">
+            <h1>Contact Us</h1>
+            <a href="#">Jobs</a>
+            <a href="#">Suppports</a>
+            <a href="#">Contact</a>
+            <a href="#">Sponsorships</a>
+        </div>
+        <div class="footer-heading footer1">
+            <h1>Social Media</h1>
+            <a href="#">Facebook</a>
+            <a href="#">Instagram</a>
+            <a href="#">twitter</a>
+            <a href="#">linkedin</a>
+        </div>
     </div>
+    <div class="textt">
+        Copyright &copy; All rights reserved, 2022 I-Tech<br>
+    </div>
+</div>
+
+<script defer src="Report.js"></script>
 </body>
 </html>
