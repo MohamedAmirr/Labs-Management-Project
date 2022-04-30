@@ -2,13 +2,13 @@ window.addEventListener("scroll",function(){
     var header = document.querySelector("header");
     header.classList.toggle("sticky",window.scrollY > 0)
 })
-let isExecuted = confirm("Are you sure to execute this action?");
-
-console.log(isExecuted); // OK = true, Cancel = false
-if (isExecuted) {
-    // if true
-    alert("Action successfully executed");
-} else {
-    // if false
-    alert("Action canceled");
+function getConfirmation() {
+    var retVal = confirm("Do you want to continue ?");
+    if( retVal == true ) {
+        alert("Laboratory successfully deleted");
+        return true;
+    } else {
+        alert("Action Canceled");
+        return false;
+    }
 }

@@ -202,7 +202,7 @@ p {
     background: transparent;
 }
 
-.submit-btn {
+button {
     width: 85%;
     padding: 10px 30px;
     cursor: pointer;
