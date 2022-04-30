@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Update.css">
+    <title>Update page</title>
+    <link rel="shortcut icon" href="logoo.png"><title>I-Tech</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" 
+    integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <header>
+        <a href="Update.html"><img src="LogoMakr-6hmZdM.png" class="logo"></a>
+        <ul>
+            <li><a href="Update.html" class="active">Home</a></li>
+            <li><a href="#"> Forum</a></li>
+            <li><a href="index.html">projects</a></li>
+            <li><a href="#section3">About Us</a></li>
+            <li><a href="join.html">Join</a></li>
+        </ul>
+    </header>
+    <div class="banner">
+        <form id="create.account.form" action="result.html" method="GET">
+            <div class="title">
+                <h2>Update Laboratory Information</h2>
+            </div>
+            <div class="input-group ">
+                <label for="Labid">Laboratory Id</label>
+                <input type="text" id="Labid" placeholder="Enter Laboratory ID" name="Labid" required>
+                <i class="fas fa-check-circle"></i>
+                <i class="fas fa-exclamation-circle"></i>
+                <p>Error Message</p>
+            </div>
+            <div class="input-group">
+              <label for="Labname">Laboratory Name</label>
+              <input type="text" id="Labname" placeholder="Enter Laboratory Name" name="Labname" required>
+              <i class="fas fa-check-circle"></i>
+              <i class="fas fa-exclamation-circle"></i>
+              <p>Error Message</p>
+            </div>
+            <div class="input-group">
+              <label for="Buildname">Building Number</label>
+              <input type="text" id="Buildname" placeholder="Enter Building Number" name="Buildname" required>
+              <i class="fas fa-check-circle"></i>
+              <i class="fas fa-exclamation-circle"></i>
+              <p>Error Message</p>
+            </div>
+            <div class="input-group">
+              <label for="Floornum">Floor Number</label>
+              <input type="text" id="Floornum" placeholder="Enter Floor Number" name="Floornum" required>
+              <i class="fas fa-check-circle"></i>
+              <i class="fas fa-exclamation-circle"></i>
+              <p>Error Message</p>
+            </div>
+            <div class="input-group">
+              <label for="Numberofpc">Number of PCs</label>
+              <input type="text" id="Numberofpc" placeholder="Enter Number of PCs" name="Numberofpc" required>
+              <i class="fas fa-check-circle"></i>
+              <i class="fas fa-exclamation-circle"></i>
+              <p>Error Message</p>
+            </div>
+            <div class="input-group">
+              <label for="Capacity">Capacity</label>
+              <input type="text" id="Capacity" placeholder="Enter Capacity" name="Capacity" required>
+              <i class="fas fa-check-circle"></i>
+              <i class="fas fa-exclamation-circle"></i>
+              <p>Error Message</p>
+            </div>
+            <div class="input-group">
+              <label for="NumberofChairs">Number of Chairs</label>
+              <input type="text" id="NumberofChairs" placeholder="Enter Number of Chairs" name="NumberofChairs" required>
+              <i class="fas fa-check-circle"></i>
+              <i class="fas fa-exclamation-circle"></i>
+              <p>Error Message</p>
+            </div>
+            <label class="status">Status</label>
+            <input class="checkbox1" type="radio" name="creditCheck" id="c01" value="Yes" checked/>Active
+            <input class="checkbox2" type="radio" name="creditCheck" id="c02" value="No"/>Under maintenance
+            <br/>
+            <div class="input-group">
+                 <button type="submit" class="button1">Save Changes</button>
+                 <button type="submit" class="button2">Cancel</button>
+                <a href="..\add ,delete page\Delete.html">
+                           <button class="button3" action="..\add ,delete page\Delete.html" type="button">Delete Laboratory</button> 
+                </a>
+            </div>   
+    </form>
+</div>
+    <div class="sub">
+        <div class="searchBar">
+            <h1>Subscribe to our Newsletter :</h1>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <input type="email" placeholder="Enter your email" required>
+            <button>Subscribe</button>
+        </div>
+    </div>
+    <div class="containerr" id="section3">
+        <div class="footer">
+            <div class="footer-heading footer1">
+                <h1>About us</h1>
+                <a href="#">Blog</a>
+                <a href="#">Demo</a>
+                <a href="#">Customers</a>
+                <a href="#">Investors</a>
+                <a href="#">Terms of Services</a>
+            </div>
+            <div class="footer-heading footer1">
+                <h1>Contact Us</h1>
+                <a href="#">Jobs</a>
+                <a href="#">Suppports</a>
+                <a href="#">Contact</a>
+                <a href="#">Sponsorships</a>
+            </div>
+            <div class="footer-heading footer1">
+                <h1>Social Media</h1>
+                <a href="#">Facebook</a>
+                <a href="#">Instagram</a>
+                <a href="#">twitter</a>
+                <a href="#">linkedin</a>
+            </div>
+        </div>
+        <div class="textt">
+            Copyright &copy; All rights reserved, 2022 I-Tech<br>
+        </div>
+    </div>
+    <script defer src="Update.js"></script>
+</body>
+</html>
