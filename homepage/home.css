@@ -256,7 +256,6 @@ html {
     text-align: center;
     border: 0;
     color: #fff;
-    display: inside;
     cursor: pointer;
     white-space: nowrap;
     background-color: #cb8906;
@@ -264,7 +263,7 @@ html {
 }
 .searchBar button:hover{
     background-color: #e9a214;
-    transition: 0.5;
+    transition: 0.5s;
 }
 .searchBar h1{
     font-weight: bold;
