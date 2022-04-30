@@ -7,9 +7,9 @@ function reveal(){
         if(elementTop<windowHeight-elementVisible){
             transitions[i].classList.add("active");
         }
-        else {
-            transitions[i].classList.remove("active");
-        }
+        // else {
+        //     transitions[i].classList.remove("active");
+        // }
     }
 }
 window.addEventListener("scroll",reveal);
