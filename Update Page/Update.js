@@ -6,10 +6,6 @@ let form = document.querySelector('#create.account.form');
 let Laboratory_Id = document.querySelector('#Labid');
 let Laboratory_Name = document.querySelector('#Labname');
 let Building_Number = document.querySelector('#Buildname');
-let Floor_Number = document.querySelector('#Floornum');
-let Number_of_PCs = document.querySelector('#Numberofpc');
-let Capacity = document.querySelector('#Capacity');
-let Number_of_Chairs = document.querySelector('#NumberofChairs');
 
 document.querySelector("button").addEventListener("click",(event)=>{
     validateForm();
@@ -90,4 +86,15 @@ function setSuccess(input)
     messageEle.innerText="";
 }
 
+
+function getConfirmation() {
+    var retVal = confirm("Do you want to continue ?");
+    if( retVal == true ) {
+        alert("Laboratory successfully deleted");
+        return true;
+    } else {
+        alert("Action Canceled");
+        return false;
+    }
+}
  
