@@ -19,17 +19,19 @@ document.querySelector("button").addEventListener("click",(event)=>{
    }
 });
 
-function isFormValid(){
-    const inputContainers = form.querySelectorAll('.input-group');
-    let result = true;
-    inputContainers.forEach((container)=>{
-        if(container.classList.contains('error'))
-        {
-              result = false;
-        }
-    });
-    return result;
-}
+
+
+// function isFormValid(){
+//     const inputContainers = form.querySelectorAll('.input-group');
+//     let result = true;
+//     inputContainers.forEach((container)=>{
+//         if(container.classList.contains('error'))
+//         {
+//               result = false;
+//         }
+//     });
+//     return result;
+// }
 function validateForm()
 {
     if(Laboratory_Id.value.trim()==='')
@@ -57,39 +59,29 @@ function validateForm()
         setSuccess(Laboratory_Name);
     }
 }
-function setError (input, errorMessage)
-{
-    let parent = input.parentElement;
-    let messageEle =parent.querySelector("p");
-    messageEle.style.visibility="visible";
-    messageEle.innerText=errorMessage ;
-}
-function setSuccess(input)
-{
-    let parent =  input.parentElement;
-    let messageEle =parent.querySelector("p");
-    messageEle.style.visibility="hidden";
-    messageEle.innerText="";
-}
+// function setError (input, errorMessage)
+// {
+//     let parent = input.parentElement;
+//     let messageEle =parent.querySelector("p");
+//     messageEle.style.visibility="visible";
+//     messageEle.innerText=errorMessage ;
+// }
+// function setSuccess(input)
+// {
+//     let parent =  input.parentElement;
+//     let messageEle =parent.querySelector("p");
+//     messageEle.style.visibility="hidden";
+//     messageEle.innerText="";
+// }
 
-function check (){
+function check(){
     var x = document.getElementById('ID').value;
     if (x === ''){
-        alert("you must fill the ID laporatory");
+        alert("you must fill the ID laboratory");
         return false;
     }
 }
 
-function getConfirmation() {
-    var retVal = confirm("Do you want to continue ?");
-    if( retVal == true ) {
-        alert("Laboratory successfully deleted");
-        return true;
-    } else {
-        alert("Action Canceled");
-        return false;
-    }
-}
 window.addEventListener("scroll",function(){
     var header = document.querySelector("header");
     header.classList.toggle("sticky",window.scrollY > 0)
