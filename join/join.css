@@ -4,7 +4,9 @@
   box-sizing: border-box;
   font-family:montserrat, sans-serif;
 }
-
+html{
+    scroll-behavior: smooth;
+}
 body {
   background-image:  linear-gradient(rgb(1, 9, 33),rgba(21, 4, 88, 0.1)),url('header.jpg');
   background-position: center;
