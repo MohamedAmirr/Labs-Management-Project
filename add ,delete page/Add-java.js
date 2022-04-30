@@ -3,5 +3,5 @@ window.addEventListener("scroll",function(){
     header.classList.toggle("sticky",window.scrollY > 0)
 })
 function dialogue(){
-        alert("")
+        alert("Laboratory has been added");
 }
