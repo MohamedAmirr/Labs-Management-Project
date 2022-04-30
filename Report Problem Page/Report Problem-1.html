@@ -5,38 +5,41 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="Report Style-2.css">
-    <link rel="shortcut icon" href="logoo.png"><title>I-Tech</title>
+    <link rel="shortcut icon" href="logoo.png">
+    <title>Report</title>
 </head>
 <body>
 <header>
     <a href="homepage.html"><img src="LogoMakr-6hmZdM.png" class="logo"></a>
     <ul>
-        <li><a href="homepage.html" class="active">Home</a></li>
-        <li><a href="#"> Forum</a></li>
+        <li><a href="../homepage/homepage.html">Home</a></li>
+        <li><a href="#" class="active"> Forum</a></li>
         <li><a href="index.html">projects</a></li>
         <li><a href="#section3">About Us</a></li>
         <li><a href="join.html">Join</a></li>
     </ul>
 </header>
-
-<div class="box" id="Box" >
-    <form>
-        <h1> What's happening? </h1> <br/>
-        <label class="labid">Laboratory ID </label>
-        <input id="ID" class="id" type="text" placeholder="Enter Laboratory ID" required> <br/>
-        <label class="pc"> Number of PC </label>
-        <input id="num_pc" class="num3" type="text" placeholder="Enter Number of PC" required><br/>
-        <label class="setdate">Date of Occurrence</label>
-        <input id="Date" class="date" type="date" placeholder=""><br/>
-        <label class="type">Choose Problem Type</label>
-        <input class="checkbox1" type="radio" name="creditCheck" id="c01" value="Yes" checked/>Software
-        <input class="checkbox2" type="radio" name="creditCheck" id="c02" value="No"/>Hardware
-        <br/>
-        <textarea id = "description" class="mess" id="message" placeholder="Description of problem..." rows="3" required></textarea>
-        <br>
-        <input id = "save" class="button1" type="button" value="Save Changes">
-        <input id = "cancel" class="button2" type="button" value="Cancel">
-    </form>
+<div class="transition">
+    <div class="box" id="Box">
+        <form>
+            <h1> What's happening? </h1> <br/>
+            <label class="labid">Laboratory ID </label>
+            <input id="ID" class="id" type="text" placeholder="Enter Laboratory ID" required> <br/>
+            <label class="pc"> Number of PC </label>
+            <input id="num_pc" class="num3" type="text" placeholder="Enter Number of PC" required><br/>
+            <label class="setdate">Date of Occurrence</label>
+            <input id="Date" class="date" type="date" placeholder=""><br/>
+            <label class="type">Choose Problem Type</label>
+            <input class="checkbox1" type="radio" name="creditCheck" id="c01" value="Yes" checked/> Software
+            <input class="checkbox2" type="radio" name="creditCheck" id="c02" value="No"/> Hardware
+            <br/>
+            <textarea id="description" class="mess" id="message" placeholder="Description of problem..." rows="3"
+                      required></textarea>
+            <br>
+            <input id="save" class="button1" type="submit" value="Save Changes">
+            <input id="cancel" class="button2" type="button" value="Cancel">
+        </form>
+    </div>
 </div>
 <div class="containerr" id="section3">
     <div class="footer">

@@ -25,6 +25,7 @@ body
 .box{
     padding: 5%;
     margin-top: 2%;
+    color:white;
 }
 .banner{
     width: 100%;
@@ -131,6 +132,7 @@ header.sticky .logo{
 
 
 
+
 input[type="radio"]
 {
 -webkit-appearance: checkbox; /* Chrome, Safari, Opera */
@@ -160,6 +162,22 @@ input
     border-radius: 5px;
     border-width: 1px;
     padding: 5px;
+    outline:none;
+}
+
+.transition {
+    animation: transition 1s;
+}
+
+@keyframes transition {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 textarea
@@ -180,33 +198,43 @@ textarea
 .checkbox2{margin-left: 10px;}
 
 
+.button1:active {
+    transform: scale(0.9);
+}
+.button2:active {
+    transform: scale(0.9);
+}
+
+
 .button1
 {
-    background-color: #2682FF;
-    color: white;
-    height: 40px;
-    width: 120px;
-    border-radius: 20px;
+    background-color: #cb8906;
+    color: rgb(17, 13, 47);
+    height: 45px;
+    width: 125px;
+    border-radius: 25px;
     margin: 4px 2px;
     border: none;
     margin-top:10px;
     margin-right: 20px;
+    font-size: 15px;
     margin-left: 10px;
     cursor: pointer;
-    font-weight: bold;
+    /*font-weight: bold;*/
 }
 
 .button2
 {
-    background-color: #c71111d8;
-    color: white;
-    height: 40px;
-    width: 120px;
-    border-radius: 20px;
+    background-color: #cb8906;
+    color: rgb(17, 13, 47);
+    height: 45px;
+    width: 125px;
+    border-radius: 25px;
     margin: 4px 2px;
     border: none;
     cursor: pointer;
-    font-weight: bold;
+    font-size: 15px;
+    /*font-weight: bold;*/
 }
 
 /* start footer */
