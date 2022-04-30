@@ -72,6 +72,13 @@ function setSuccess(input)
     messageEle.innerText="";
 }
 
+function check (){
+    var x = document.getElementById('ID').value;
+    if (x === ''){
+        alert("you must fill the ID laporatory");
+        return false;
+    }
+}
 
 function getConfirmation() {
     var retVal = confirm("Do you want to continue ?");

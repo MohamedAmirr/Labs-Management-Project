@@ -30,6 +30,10 @@ body
     margin-top: 2%;
     color:white;
 }
+
+.checkbox2{margin-left: 10px;}
+.status{width: 145px;}
+
 .banner{
     width: 100%;
     height: 725px;

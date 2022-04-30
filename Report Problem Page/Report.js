@@ -3,54 +3,62 @@ window.addEventListener("scroll",function(){
     header.classList.toggle("sticky",window.scrollY > 0)
 })
 
-const box = document.getElementById('Box');
-const idLap = document.getElementById('ID');
-const numPc = document.getElementById('num_pc');
-const datee = document.getElementById('date');
+let form = document.querySelector('#create.account.form');
+let lapid = document.getElementById('ID');
+let numPC = document.getElementById('num_pc');
+let date = document.getElementById('Date');
 
-box.addEventListener('submit' , e => {
-    e.preventDefault();
-    validateInputs();
-})
+document.querySelector("button").addEventListener("click" , (event) => {
+    validateForm();
 
-const setError = (element , message) => {
-    const inputControl = element.parentElement;
-    const errordisplay = inputControl.querySelector('.error');
+    if (isFormValid() === true){
+        form.button();
+    }
+});
 
-    errordisplay.innerText = message;
-    inputControl.classList.add('error');
-    inputControl.classList.remove('success');
+function isFormValid (){
+    const inputContainers = form.querySelectorAll('.input-box');
+    let result = true;
+    inputContainers.forEach((container) => {
+        if (container.classList.contains('error')){
+            result = false;
+        }
+    });
+    return result;
 }
 
-const setSuccess = element => {
-    const inputcontrol = element.parentElement;
-    const errordisplay = inputcontrol.querySelector('.error');
-
-    errordisplay.innerText = '';
-    inputcontrol.classList.add('success');
-    inputcontrol.classList.remove('error');
+function validateForm ()
+{
+    if (lapid.value.trim() === ''){
+        setError(lapid , "Laboratory id can not be empty");
+    }
+    else if (lapid.value.trim().length < 6 || lapid.value.trim().length > 9){
+        setError(lapid,"Laboratory id must be between 6 characters and 9 characters");
+    }
+    else {
+        setSuccess(lapid);
+    }
+    if (numPC.value.trim()===''){
+        setError(numPC,"enter the num of pc");
+    }
+    else if (numPC.value.trim() < 0 || numPC.value.trim() > 100){
+        setError(numPC,"num of pc must be between 0 and 100");
+    }
+    else {
+        setSuccess(numPC);
+    }
 }
 
-const validateInputs = () => {
-    const idvalue = idLap.value.trim();
-    const numpcvalue = numPc.value.trim();
-    const date = datee.value.trim();
+function setError (input , errorMessage){
+    let parent = input.parentElement;
+    let messageEle =parent.querySelector("p.value");
+    messageEle.style.visibility="visible";
+    messageEle.innerText=errorMessage;
+}
 
-    if (idvalue => 1 && idvalue <= 50){
-        setSuccess(idlap);
-        alert("success");
-    }
-    else {
-        setError(idLap , 'id is required');
-        alert("error");
-    }
-    if (numpcvalue => 1 && numpcvalue <= 50){
-        setSuccess(numPc);
-        alert("success");
-
-    }
-    else {
-        setError(numPc , 'num of pc is required');
-        alert("error");
-    }
+function setSuccess (input) {
+    let parent = input.parentElement;
+    let messageEle = parent.querySelectorAll("p");
+    messageEle.style.visibility="visible";
+    messageEle.innerText="successful";
 }
