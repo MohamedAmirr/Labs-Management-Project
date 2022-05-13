@@ -187,9 +187,9 @@ button:active {
     transition: .5s;
 }
 
-p {
+.form-box p {
     color: white;
-    margin-left: 80px;
+    margin-left: 60px;
     font-size: 25px;
     margin-bottom: 20px;
 }
@@ -227,11 +227,11 @@ span {
     position: absolute;
 }
 
-#add {
+#delete {
     left: 50px;
 }
 
-#add input {
+#delete input {
     color: white;
     font-size: 15px;
 }
