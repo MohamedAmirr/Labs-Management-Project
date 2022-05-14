@@ -8,7 +8,7 @@ function getConfirmation() {
     event.preventDefault();
     let retVal = confirm("Do you want to continue ?");
     if (retVal) {
-        window.location = "../homepage/homepage.html";
+        location.replace("../homepage/homepage.html");
         alert("Laboratory successfully deleted");
         return true;
     } else {

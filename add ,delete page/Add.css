@@ -227,11 +227,11 @@ span {
     position: absolute;
 }
 
-#delete {
+#add {
     left: 50px;
 }
 
-#delete input {
+#add input {
     color: white;
     font-size: 15px;
 }

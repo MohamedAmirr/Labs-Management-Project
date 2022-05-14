@@ -294,12 +294,12 @@ span {
     position: absolute;
 }
 
-#delete {
+#add {
     text-align: center;
     left: 90px;
 }
 
-#delete input {
+#add input {
     color: white;
     font-size: 15px;
 }
