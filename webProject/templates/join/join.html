@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+{% load static %}
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="{% static 'join/join.css' %}">
+    <link rel="shortcut icon" href="../../static/join/logoo.png">
+    <title>join</title>
+</head>
+<body>
+<div class="bar">
+    <header>
+        <a href="../home"><img src="../../static/join/LogoMakr-6hmZdM.png" class="logo"></a>
+        <ul>
+            <li><a href="../home">Home</a></li>
+            <li><a href="../forum"> Forum</a></li>
+            <li><a href="..">projects</a></li>
+            <li><a href="#section3">About Us</a></li>
+            <li><a href="../join" class="active">Join</a></li>
+        </ul>
+    </header>
+</div>
+<div class="container" id="container">
+    <div class="form-container sign-up-container">
+
+        <form method="POST" action="" onsubmit="verifyPass();">
+            {% csrf_token %}
+            <h1>Create Account</h1>
+            <div class="social-container">
+                <a href="/join" class="social"><i><img src="../../static/join/fb.png" title="facebook" alt="facebook">
+                </i></a>
+                <a href="/join" class="social"><i><img src="../../static/join/email.png" title="gmail" alt="gmail"></i></a>
+                <a href="/join" class="social"><i><img src="../../static/join/linkedin.png" title="linkedin"
+                                                       alt="linkedin"></i></a>
+            </div>
+            <span>or use your email for registration</span><br>
+            <input type="text" class="focus" name="firstName" placeholder="Enter your first name" required>
+            <input type="text" class="focus" name="lastName" placeholder="Enter your last name" required>
+            <input type="email" class="focus" name="email" placeholder="Enter your email" required>
+            <input type="password" class="focus" id="pass1" name="password1" placeholder="Enter your password" required>
+            <input type="password" class="focus" id="pass2" name="password#" placeholder="Confirm your password"
+                   required>
+            <span id="message" style="color:red;font-size: 15px"> </span> <br><br>
+            <button type="submit" name="signup" value="s" >SignUp</button>
+            {% for  m in messages %}
+                <p>{{ m }}</p>
+            {% endfor %}
+        </form>
+    </div>
+
+    <div class="form-container sign-in-container">
+        <form METHOD="POST">
+            {% csrf_token %}
+            <h1>LogIn</h1>
+            <div class="social-container">
+                <a href="/join" class="social"><i><img src="../../static/join/fb.png" title="facebook" alt="facebook">
+                </i></a>
+                <a href="/join" class="social"><i><img src="../../static/join/email.png" title="gmail" alt="gmail"></i></a>
+                <a href="/join" class="social"><i><img src="../../static/join/linkedin.png" title="linkedin"
+                                                       alt="linkedin"></i></a>
+            </div>
+            <span>or use your account</span>
+            <input class="focus" type="text" name="email1" placeholder="User name" required>
+            <input class="focus" type="password" name="password1" placeholder="Password" required>
+            <a href="#">Forgot your password?</a>
+
+            <button type="submit" name="login" value="l">Login</button>
+        </form>
+    </div>
+    <div class="overlay-container">
+        <div class="overlay">
+            <div class="overlay-panel overlay-left">
+                <h1>Welcome to I-TECH !</h1>
+                <p>To keep connected with <span style="color: orange;">I-TECH</span> please<br>login with your personal
+                    info</p>
+                <button class="ghost" id="signIn">login</button>
+            </div>
+            <div class="overlay-panel overlay-right">
+                <h1>Welcome to I-TECH !</h1>
+                <p>Enter your details and start journey<br>with <span style="color: orange;">I-TECH</span> now !</p>
+                <button class="ghost" id="signUp">Sign Up</button>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="containerr" id="section3">
+    <div class="footer">
+        <div class="footer-heading footer1">
+            <h1>About us</h1>
+            <a href="#">Blog</a>
+            <a href="#">Demo</a>
+            <a href="#">Customers</a>
+            <a href="#">Investors</a>
+            <a href="#">Terms of Services</a>
+        </div>
+        <div class="footer-heading footer1">
+            <h1>Contact Us</h1>
+            <a href="#">Jobs</a>
+            <a href="#">Suppports</a>
+            <a href="#">Contact</a>
+            <a href="#">Sponsorships</a>
+        </div>
+        <div class="footer-heading footer1">
+            <h1>Social Media</h1>
+            <a href="#">Facebook</a>
+            <a href="#">Instagram</a>
+            <a href="#">twitter</a>
+            <a href="#">linkedin</a>
+        </div>
+    </div>
+    <div class="textt">
+        Copyright &copy; All rights reserved, 2022 I-Tech<br>
+    </div>
+</div>
+
+<script src="../../static/join/join-java.js"></script>
+
+
+</body>
+</html>

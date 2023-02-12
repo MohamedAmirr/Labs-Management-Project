@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load static %}
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static '/add/add.css' %}">
+    <link rel="shortcut icon" href="../../../static/add/logoo.png">
+    <title>Add</title>
+</head>
+<body>
+<!-- start of the navigation -->
+<header>
+    <a href="../../home"><img src="../../../static/add/LogoMakr-6hmZdM.png" class="logo"></a>
+    <ul>
+        <li><a href="../../home">Home</a></li>
+        <li><a href="../../forum" class="active"> Forum</a></li>
+        <li><a href="../../">projects</a></li>
+        <li><a href="../../home#section3">About Us</a></li>
+        <li><a href="../../join">Join</a></li>
+    </ul>
+</header>
+<!-- end of the navigation -->
+
+<!-- start of the animation -->
+<div class="transition">
+    <div id='add-form' class='add-page'>
+        <div class="form-box">
+
+            <form method="POST" id='add' class='input-group-add'>
+                {% csrf_token %}
+                <p>
+                    Add Laboratory
+                </p>
+                <input type="text" class="input-field" name="labName" placeholder='Lab Name' id="labName" required>
+                <input type="text" class="input-field" name="labID" placeholder='Lab ID' id="labID" required>
+                <input type="text" class="input-field" name="buildingNumber" placeholder='Building Number' id="buildingNumber" required>
+                <input type="number" class="input-field" name="floorNumber" placeholder='Floor Number' id="floorNumber" required>
+                <input type="number" class="input-field" name="numOfPcs" placeholder='Number of PCs' id="numPCs" required>
+                <input type="number" class="input-field" name="capacity" placeholder='Capacity' id="capacity" required>
+                <input type="number" class="input-field" name="numOfChairs" placeholder='Number of chairs' id="numOfChairs" required>
+                <button type="submit" id="addItem">Add</button>
+            </form>
+        </div>
+    </div>
+</div>
+
+<!-- end of animation -->
+
+
+<div class="containerr" id="section3">
+    <div class="footer">
+        <div class="footer-heading footer1">
+            <h1>About us</h1>
+            <a href="#">Blog</a>
+            <a href="#">Demo</a>
+            <a href="#">Customers</a>
+            <a href="#">Investors</a>
+            <a href="#">Terms of Services</a>
+        </div>
+        <div class="footer-heading footer1">
+            <h1>Contact Us</h1>
+            <a href="#">Jobs</a>
+            <a href="#">Suppports</a>
+            <a href="#">Contact</a>
+            <a href="#">Sponsorships</a>
+        </div>
+        <div class="footer-heading footer1">
+            <h1>Social Media</h1>
+            <a href="#">Facebook</a>
+            <a href="#">Instagram</a>
+            <a href="#">twitter</a>
+            <a href="#">linkedin</a>
+        </div>
+    </div>
+    <div class="textt">
+        Copyright &copy; All rights reserved, 2022 I-Tech<br>
+    </div>
+</div>
+<script defer src="../../../static/add/add.js"></script>
+
+</body>
