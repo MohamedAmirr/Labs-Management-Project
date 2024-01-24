@@ -34,7 +34,6 @@ INSTALLED_APPS = [
     'join.apps.JoinConfig',
     'add.apps.AddConfig',
     'delete.apps.DeleteConfig',
-    'cover.apps.CoverConfig',
     'report.apps.ReportConfig',
     'update.apps.UpdateConfig',
     'django.contrib.admin',
